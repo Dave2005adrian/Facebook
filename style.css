@@ -20,7 +20,7 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: 432px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -163,6 +163,49 @@ form {
 
     .input-field {
         padding: 10px 14px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+}
+
+@media (min-width: 769px) {
+    .wrapper {
+        max-width: 650px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .input-field {
+        padding: 14px 18px;
+        font-size: 16px;
+    }
+
+    .login-btn,
+    .create-btn {
+        padding: 12px 18px;
         font-size: 16px;
     }
 }
